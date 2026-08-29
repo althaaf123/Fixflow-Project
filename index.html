@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FixFlow — Home Repairs, Simplified</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+
+<!-- NAV -->
+<header class="site-nav" id="top">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo-link">
+      <img src="assets/images/logo.jpg" alt="FixFlow logo" class="logo-img">
+      <span class="logo">Fix<span>Flow</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#top" class="active">Home</a>
+      <a href="#services">Services</a>
+      <a href="#process">How It Works</a>
+      <a href="#support">Help</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="link-btn" id="signInBtn">Sign In</button>
+      <button class="btn btn-orange" id="getStartedBtn">Get Started</button>
+    </div>
+
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu-panel" id="mobileMenuPanel">
+    <a href="#top" class="active">Home</a>
+    <a href="#services">Services</a>
+    <a href="#process">How It Works</a>
+    <a href="#support">Help</a>
+    <div class="mobile-menu-actions">
+      <button class="link-btn" id="mobileSignInBtn">Sign In</button>
+      <button class="btn btn-orange full" id="mobileGetStartedBtn">Get Started</button>
+    </div>
+  </div>
+</header>
+
+<!-- 01 HERO — NAVY -->
+<section class="section navy hero" id="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+
+      <div class="hero-deco-row">
+        <div class="hero-dots" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <svg class="hero-wrench" viewBox="0 0 24 24" fill="none" stroke="#FFA51F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+        </svg>
+      </div>
+      <p class="eyebrow">HOME PROBLEM <span class="eyebrow-arrow">→</span> SMART MATCH</p>
+      <h1>Something broken<br>at home?</h1>
+      <p class="hero-sub">Get fast, reliable repairs from trusted professionals. From AC, cooling to plumbing, we bring the fix right to your door.</p>
+
+      <div class="hero-btns">
+        <button class="btn btn-orange" id="findSolutionBtn">Find a Solution →</button>
+        <button class="btn btn-outline" id="exploreServicesBtn">Explore Services</button>
+      </div>
+    </div>
+    <div class="hero-art">
+      <p class="hero-process-label">PROFESSIONAL &nbsp;·&nbsp; FIXED</p>
+
+
+      <svg class="hero-deco hero-deco-1" viewBox="0 0 24 24" fill="none" stroke="#FFA51F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+      </svg>
+      <svg class="hero-deco hero-deco-2" viewBox="0 0 24 24" fill="none" stroke="#FFA51F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m15 12-8.5 8.5a2.119 2.119 0 1 1-3-3L12 9"></path>
+        <path d="M17.64 15 22 10.64"></path>
+        <path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"></path>
+      </svg>
+      <svg class="hero-deco hero-deco-3" viewBox="0 0 24 24" fill="none" stroke="#FFA51F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="m15 12-8.5 8.5a2.119 2.119 0 1 1-3-3L12 9"></path>
+        <path d="M17.64 15 22 10.64"></path>
+        <path d="m20.91 11.7-1.25-1.25c-.6-.6-.93-1.4-.93-2.25v-.86L16.01 4.6a5.56 5.56 0 0 0-3.94-1.64H9l.92.82A6.18 6.18 0 0 1 12 8.4v1.56l2 2h2.47l2.26 1.91"></path>
+      </svg>
+
+      <!-- faint house-outline watermark sitting behind the ring -->
+      <svg class="hero-house-shape" viewBox="0 0 400 400" aria-hidden="true">
+        <path d="M60 230 L200 100 L340 230 L340 360 L60 360 Z" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="16"></path>
+      </svg>
+
+
+      <div class="hero-ring-shape">
+
+        <svg class="hero-accent-circle" viewBox="0 0 100 100" aria-hidden="true">
+          <circle cx="50" cy="50" r="46" fill="none" stroke="#FFAA24" stroke-width="2.5" opacity="0.85"></circle>
+        </svg>
+      </div>
+
+
+      <img class="hero-img" src="assets/images/Rajesh Kumar.png" alt="Professional technician">
+      <div class="badge badge-verified float-slow">
+        <span class="badge-ic badge-ic-green">✓</span>
+        <span class="badge-text"><strong>Verified</strong><small>Professional</small></span>
+      </div>
+      <div class="badge badge-fast float-slow2">
+        <span class="badge-ic badge-ic-orange">⚡</span>
+        <span class="badge-text"><strong>Fast Service</strong><small>Same day repair</small></span>
+      </div>
+      <div class="badge badge-rating float-slow3">
+        <span class="badge-ic badge-ic-orange">★</span>
+        <span class="badge-text"><strong>4.8 Rating</strong><small>top pros</small></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 SERVICES — BLUE -->
+<section class="section blue" id="services">
+  <div class="wrap">
+    <h2 class="sec-title center">Everything your home needs, in one place.</h2>
+    <p class="sec-sub center">Choose from our wide range of professional services.</p>
+
+    <div class="services-grid" id="servicesGrid">
+      <div class="service-card" data-service="AC & Cooling"><div class="s-icon">❄️</div><span>AC &amp; Cooling</span></div>
+      <div class="service-card" data-service="Plumbing"><div class="s-icon">🔧</div><span>Plumbing</span></div>
+      <div class="service-card" data-service="Electrical"><div class="s-icon">⚡</div><span>Electrical</span></div>
+      <div class="service-card" data-service="Appliance Repair"><div class="s-icon">🧰</div><span>Appliance Repair</span></div>
+      <div class="service-card" data-service="Carpentry"><div class="s-icon">🪚</div><span>Carpentry</span></div>
+      <div class="service-card" data-service="Home Cleaning"><div class="s-icon">🧹</div><span>Home Cleaning</span></div>
+      <div class="service-card" data-service="Painting"><div class="s-icon">🎨</div><span>Painting</span></div>
+      <div class="service-card" data-service="Other Services"><div class="s-icon">➕</div><span>Other Services</span></div>
+    </div>
+
+    <div class="process-bar">
+      <div class="p-step"><span class="p-icon">🏠</span><span>HOME</span></div>
+      <div class="p-arrow">→</div>
+      <div class="p-step"><span class="p-icon">❗</span><span>PROBLEM</span></div>
+      <div class="p-arrow">→</div>
+      <div class="p-step"><span class="p-icon">🛠️</span><span>SERVICE</span></div>
+      <div class="p-arrow">→</div>
+      <div class="p-step"><span class="p-icon">👤</span><span>PROFESSIONAL</span></div>
+      <div class="p-arrow">→</div>
+      <div class="p-step"><span class="p-icon">✅</span><span>FIXED</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 03 SIMPLE PROCESS — NAVY -->
+<section class="section navy" id="process">
+  <div class="wrap">
+    <p class="eyebrow center">SIMPLE PROCESS</p>
+    <h2 class="sec-title center">Fix it in five simple steps.</h2>
+    <p class="sec-sub center">From problem to solution without the stress.</p>
+
+    <div class="steps-grid">
+      <div class="step-card">
+        <div class="step-num">01</div>
+        <h3>Tell Us</h3>
+        <p>Describe your home problem.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">02</div>
+        <h3>Smart Match</h3>
+        <p>We find the right professional.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">03</div>
+        <h3>Book</h3>
+        <p>Choose your preferred time.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">04</div>
+        <h3>Track</h3>
+        <p>Track your professional until arrival.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-num">05</div>
+        <h3>Get It Fixed</h3>
+        <p>Relax while your home problem gets solved.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 04 SMART ASSISTANT — BLUE -->
+<section class="section blue" id="assistant">
+  <div class="wrap assistant-grid">
+    <div class="assistant-copy">
+      <p class="eyebrow">SMART ASSISTANT</p>
+      <h2>Not sure<br>what's<br>wrong?</h2>
+      <p class="hero-sub">Our smart assistant will help identify the best service for you.</p>
+    </div>
+
+    <div class="assistant-card">
+      <div class="assistant-progress">
+        <span class="ap-step ap-done">Problem ✓</span>
+        <span class="ap-line"></span>
+        <span class="ap-step">Analysis</span>
+        <span class="ap-line"></span>
+        <span class="ap-step">Match</span>
+      </div>
+
+      <h4>What seems to be the issue?</h4>
+      <textarea id="issueText" placeholder="Describe your home problem in a few words..."></textarea>
+
+      <div class="chip-row" id="chipRow">
+        <button class="chip" data-issue="AC not cooling">AC not cooling</button>
+        <button class="chip" data-issue="Water leaking">Water leaking</button>
+        <button class="chip" data-issue="Power not working">Power not working</button>
+        <button class="chip" data-issue="Appliance not working">Appliance not working</button>
+      </div>
+
+      <div class="assistant-fields">
+        <div class="field">
+          <label for="issuePhotoInput">Upload a photo (optional)</label>
+          <input type="file" id="issuePhotoInput" accept="image/*" hidden>
+          <label class="upload-box" for="issuePhotoInput" id="uploadBoxLabel">
+            <img id="uploadPreview" class="upload-preview" alt="Selected photo" hidden>
+            <span id="uploadBoxText">📷 Choose file</span>
+          </label>
+        </div>
+        <div class="field">
+          <label for="issueLocation">Location</label>
+          <input type="text" id="issueLocation" placeholder="Enter your address">
+        </div>
+      </div>
+
+      <p class="assistant-error" id="assistantError">Please describe your issue or select one of the options above.</p>
+
+      <button class="btn btn-orange full" id="analyzeBtn">Analyze Issue</button>
+    </div>
+  </div>
+</section>
+
+<!-- 05 SMART MATCH — NAVY -->
+<section class="section navy" id="match">
+  <div class="wrap">
+    <h2 class="sec-title center">Smart Match Found</h2>
+
+    <div class="match-card">
+      <div class="match-left">
+        <div class="match-icon">❄️</div>
+        <div>
+          <h3>AC Cooling Service</h3>
+          <p>Comprehensive checkup, gas level test, and basic cleaning to restore optimal cooling performance.</p>
+          <div class="match-meta">
+            <span>⏱ 45–60 mins</span>
+            <span>🛡 30-day warranty</span>
+          </div>
+        </div>
+      </div>
+      <div class="match-right">
+        <div class="match-price">₹499</div>
+        <button class="btn btn-orange" id="selectContinueBtn">Select &amp; Continue</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 06 TRUSTED PROFESSIONALS — BLUE -->
+<section class="section blue" id="professionals">
+  <div class="wrap">
+    <div class="pros-head">
+      <div>
+        <p class="eyebrow">TRUSTED PROFESSIONALS</p>
+        <h2 class="sec-title">Choose the right<br>professional.</h2>
+        <p class="sec-sub">Vetted experts ready to help with your service.</p>
+      </div>
+      <div class="pros-controls">
+        <input type="text" id="proSearch" placeholder="Search professionals...">
+        <button class="btn btn-outline-dark" id="proFilterBtn">Filter</button>
+      </div>
+    </div>
+
+    <div class="pros-grid" id="prosGrid">
+
+      <div class="pro-card" data-name="Rajesh Kumar">
+        <img src="assets/images/Rajesh Kumar.png" alt="Rajesh Kumar">
+        <div class="pro-rating">★ 4.9</div>
+        <h4>Rajesh Kumar</h4>
+        <p class="pro-role">AC &amp; Refrigeration Expert</p>
+        <p class="pro-meta">8 yrs · 2.5 km away</p>
+        <button class="btn btn-outline-dark full view-profile-btn" data-pro="Rajesh Kumar">View Profile</button>
+      </div>
+      <div class="pro-card" data-name="Amit Singh">
+        <img src="assets/images/Amit Singh.jpg" alt="Amit Singh">
+        <div class="pro-rating">★ 4.8</div>
+        <h4>Amit Singh</h4>
+        <p class="pro-role">Plumbing Specialist</p>
+        <p class="pro-meta">6 yrs · 3.1 km away</p>
+        <button class="btn btn-outline-dark full view-profile-btn" data-pro="Amit Singh">View Profile</button>
+      </div>
+      <div class="pro-card" data-name="Suresh Menon">
+        <img src="assets/images/Suresh Menon.jpg" alt="Suresh Menon">
+        <div class="pro-rating">★ 4.7</div>
+        <h4>Suresh Menon</h4>
+        <p class="pro-role">Electrical Technician</p>
+        <p class="pro-meta">10 yrs · 1.8 km away</p>
+        <button class="btn btn-outline-dark full view-profile-btn" data-pro="Suresh Menon">View Profile</button>
+      </div>
+      <div class="pro-card" data-name="David Wilson">
+        <img src="assets/images/David Wilson.jpg" alt="David Wilson">
+        <div class="pro-rating">★ 4.9</div>
+        <h4>David Wilson</h4>
+        <p class="pro-role">Carpentry Expert</p>
+        <p class="pro-meta">7 yrs · 4.0 km away</p>
+        <button class="btn btn-outline-dark full view-profile-btn" data-pro="David Wilson">View Profile</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 07 PROFESSIONAL DETAIL — NAVY -->
+<section class="section navy" id="proDetail">
+  <div class="wrap">
+    <div class="detail-card">
+      <div class="detail-left">
+
+        <img src="assets/images/Rajesh Kumar.png" alt="Rajesh Kumar" id="detailPhoto">
+        <button class="btn btn-orange full" id="selectProBtn">Select Pro</button>
+      </div>
+      <div class="detail-right">
+        <h3 id="detailName">Rajesh Kumar</h3>
+        <p class="detail-role" id="detailRole">Verified AC &amp; Refrigeration Expert</p>
+        <p class="detail-rating">★ <span id="detailRating">4.9</span> Rating</p>
+        <p class="detail-desc" id="detailDesc">Highly experienced technician specializing in split and window AC units. Known for quick diagnostics and clean work. Always arrives on time with full toolkits.</p>
+
+        <table class="detail-table">
+          <tr><td>Experience</td><td id="detailExperience">8 Years</td></tr>
+          <tr><td>Jobs Completed</td><td id="detailJobs">1,240+</td></tr>
+          <tr><td>Response Time</td><td id="detailResponse">Usually within 1 hr</td></tr>
+          <tr><td>Base Price</td><td id="detailPrice">Standard Rates</td></tr>
+        </table>
+
+        <p class="recent-work-label">RECENT WORK</p>
+        <div class="recent-work-row">
+          <img src="assets/images/recent1.png" alt="Recent work" id="detailWork1">
+          <img src="assets/images/recent2.png" alt="Recent work" id="detailWork2">
+          <div class="recent-more" id="detailMoreCount">+12</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 08 BOOK YOUR SERVICE — BLUE -->
+<section class="section blue" id="booking">
+  <div class="wrap center booking-header">
+    <p class="eyebrow center">BOOK YOUR SERVICE</p>
+    <h2 class="sec-title center">Schedule your service.</h2>
+    <p class="sec-sub center">Choose a convenient date and time.</p>
+  </div>
+
+  <div class="wrap booking-grid-v2">
+    <div class="booking-form-card">
+      <div class="form-row">
+        <div class="field">
+          <label for="bookingService">Service</label>
+          <select id="bookingService">
+            <option value="AC Cooling Service" data-price="499">AC Cooling Service</option>
+            <option value="Plumbing Service" data-price="349">Plumbing Service</option>
+            <option value="Electrical Service" data-price="399">Electrical Service</option>
+            <option value="Appliance Repair" data-price="449">Appliance Repair</option>
+            <option value="Carpentry Service" data-price="399">Carpentry Service</option>
+            <option value="Home Cleaning" data-price="599">Home Cleaning</option>
+            <option value="Painting Service" data-price="1299">Painting Service</option>
+            <option value="Other Service" data-price="299">Other Service</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bookingDate">Date</label>
+          <div class="input-icon-wrap">
+            <input type="date" id="bookingDate">
+            <span class="input-icon-glyph">📅</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="bookingTime">Time</label>
+          <select id="bookingTime">
+            <option>09:00 AM</option>
+            <option>10:00 AM</option>
+            <option>11:30 AM</option>
+            <option>01:00 PM</option>
+            <option>02:30 PM</option>
+            <option>04:00 PM</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="bookingAddress">Address</label>
+          <input type="text" id="bookingAddress" placeholder="Enter your address" value="Chennai">
+        </div>
+      </div>
+
+      <button class="btn btn-orange full" id="confirmBookingBtn">Confirm Booking</button>
+    </div>
+
+    <div class="booking-summary-card">
+      <p class="eyebrow">SELECTED SERVICE</p>
+      <h3 id="summaryServiceName">AC Cooling Service</h3>
+
+      <div class="summary-line"><span>Date</span><span id="summaryDate">—</span></div>
+      <div class="summary-line"><span>Time</span><span id="summaryTime">09:00 AM</span></div>
+      <div class="summary-line"><span>Price</span><span id="summaryPrice">₹499</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 09 BOOKING CONFIRMED — NAVY -->
+<section class="section navy" id="confirmed">
+  <div class="wrap">
+    <div class="confirmed-card">
+      <div class="confirmed-icon">✓</div>
+      <p class="eyebrow center">BOOKING CONFIRMED</p>
+      <h2 class="sec-title center">You're all set!</h2>
+      <p class="sec-sub center">Your professional has been notified.</p>
+      <p class="booking-id">Booking ID: <span id="bookingId">FF-000000</span></p>
+
+      <div class="confirmed-info">
+        <div>
+          <span class="ci-label">Booked</span>
+          <span class="ci-value" id="confBookedDate">Fri, Aug 4</span>
+        </div>
+        <div>
+          <span class="ci-label">Professional</span>
+          <span class="ci-value" id="confPro">Rajesh Kumar assigned</span>
+        </div>
+        <div>
+          <span class="ci-label">Time</span>
+          <span class="ci-value" id="confTime">10:00 AM</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 10 LIVE TRACKING — BLUE -->
+<section class="section blue" id="tracking">
+  <div class="wrap tracking-grid">
+    <div class="tracking-left">
+      <h2 class="sec-title">Track your service in real-time</h2>
+      <ul class="timeline" id="timeline">
+        <li class="tl-done">Booking Confirmed</li>
+        <li class="tl-done">Rajesh Assigned</li>
+        <li class="tl-active">On the way</li>
+        <li>Service Started</li>
+        <li>Completed</li>
+      </ul>
+    </div>
+
+    <div class="tracking-right">
+      <div class="map-wrap" id="mapWrap">
+        <svg class="map-svg" viewBox="0 0 600 420" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="600" height="420" fill="#E7EEF3"></rect>
+          <rect x="380" y="0" width="220" height="150" fill="#DCEBDD"></rect>
+          <rect x="0" y="0" width="140" height="120" fill="#E1E9EE"></rect>
+
+          <rect x="0" y="150" width="600" height="18" fill="#FFFFFF"></rect>
+          <rect x="0" y="260" width="600" height="14" fill="#FFFFFF"></rect>
+          <rect x="120" y="0" width="16" height="420" fill="#FFFFFF"></rect>
+          <rect x="330" y="0" width="14" height="420" fill="#FFFFFF"></rect>
+          <rect x="470" y="0" width="14" height="420" fill="#FFFFFF"></rect>
+
+          <path id="routePath" d="M 60 360 L 60 259 L 128 259 L 128 159 L 337 159 L 337 74 L 477 74"
+                fill="none" stroke="#FFA51F" stroke-width="5" stroke-dasharray="2 10" stroke-linecap="round"></path>
+
+          <circle cx="60" cy="360" r="7" fill="#0F1F33"></circle>
+          <text x="72" y="364" font-size="12" font-weight="700" fill="#0F1F33">Start</text>
+
+          <circle cx="477" cy="74" r="9" fill="#FFA51F"></circle>
+          <text x="477" y="55" font-size="12" font-weight="700" fill="#0F1F33" text-anchor="middle">Your Home</text>
+        </svg>
+
+        <div class="map-marker" id="mapMarker">🛵</div>
+
+        <div class="map-card">
+          <strong id="trackName">Rajesh is on the way</strong>
+          <p id="trackEta">Arriving in <span id="etaMins">12</span> mins</p>
+          <p id="trackDistance"><span id="distKm">2.5</span> km away</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 WHY CHOOSE FIXFLOW — NAVY -->
+<section class="section navy" id="why">
+  <div class="wrap">
+    <h2 class="sec-title center">Why choose FixFlow?</h2>
+    <p class="sec-sub center">Premium service quality you can rely on.</p>
+
+    <div class="why-grid">
+      <div class="why-card"><div class="s-icon">🛡</div><h4>Vetted Professionals</h4></div>
+      <div class="why-card"><div class="s-icon">💲</div><h4>Transparent Pricing</h4></div>
+      <div class="why-card"><div class="s-icon">🎧</div><h4>24/7 Support</h4></div>
+      <div class="why-card"><div class="s-icon">✅</div><h4>Service Guarantee</h4></div>
+    </div>
+
+    <div class="stats-card">
+      <div class="stat"><span class="stat-num">10,000+</span><span class="stat-label">HOMES HELPED</span></div>
+      <div class="stat"><span class="stat-num">4.9/5 ★</span><span class="stat-label">AVERAGE RATING</span></div>
+      <div class="stat"><span class="stat-num">2,500+</span><span class="stat-label">VERIFIED PROS</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 12 LOVED BY THOUSANDS — BLUE -->
+<section class="section blue" id="testimonials">
+  <div class="wrap">
+    <h2 class="sec-title center">Loved by thousands</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="t-rating">★★★★★</div>
+        <p>"The booking process was incredibly smooth. The technician arrived on time and fixed my washing machine in under an hour. Highly recommend FixFlow!"</p>
+        <div class="t-person"><img src="assets/images/priya.jpg" alt="Customer"><span>Priya Nair</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="t-rating">★★★★★</div>
+        <p>"I had a plumbing emergency late at night. The smart assistant matched me immediately, and the pro saved my house from flooding. Fantastic service."</p>
+        <div class="t-person"><img src="assets/images/Arun.jpg" alt="Customer"><span>Arun K.</span></div>
+      </div>
+      <div class="testimonial-card">
+        <div class="t-rating">★★★★★</div>
+        <p>"Very professional setup. I love that I can see exactly who is coming and track their arrival. The AC cooling service was thorough and transparently priced."</p>
+        <div class="t-person"><img src="assets/images/sarah.jpg" alt="Customer"><span>Sarah J.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 13 SUPPORT — NAVY -->
+<section class="section navy" id="support">
+  <div class="wrap">
+    <h2 class="sec-title center">We're here to help</h2>
+    <div class="support-grid">
+      <div class="support-card" id="helpCenterCard">
+        <div class="s-icon"><img src="assets/icons/help_center_transparent.png" alt="Help Center icon"></div>
+        <h4>Help Center</h4>
+        <p>Browse guides and answers.</p>
+      </div>
+      <div class="support-card" id="chatSupportCard">
+        <div class="s-icon"><img src="assets/icons/chat_support_transparent.png" alt="Chat Support icon"></div>
+        <h4>Chat Support</h4>
+        <p>Talk to our team live.</p>
+      </div>
+      <div class="support-card" id="emailUsCard">
+        <div class="s-icon"><img src="assets/icons/email_us_transparent.png" alt="Email icon"></div>
+        <h4>Email Us</h4>
+        <p>We reply within a day.</p>
+      </div>
+      <div class="support-card support-emergency" id="emergencyCard">
+        <div class="s-icon"><img src="assets/icons/need_urgent_help_transparent.png" alt="Emergency icon"></div>
+        <h4>Need urgent help?</h4>
+        <p>Get priority emergency support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 14 READY TO GET IT FIXED — ORANGE -->
+<section class="section orange" id="cta">
+  <div class="wrap center">
+    <h2 class="sec-title dark">Ready to get it fixed?</h2>
+    <p class="sec-sub dark center">Join thousands of happy homeowners who trust FixFlow for all their maintenance needs.</p>
+    <div class="hero-btns center">
+      <button class="btn btn-dark" id="bookNowBtn">Book a Service Now</button>
+      <button class="btn btn-outline-dark2" id="downloadAppBtn">Download App</button>
+    </div>
+  </div>
+</section>
+
+<!-- 15 FOOTER — NAVY -->
+<footer class="section navy footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="logo">Fix<span>Flow</span></div>
+      <p class="footer-tag">Reliable home repairs, on demand.</p>
+    </div>
+    <div>
+      <h5>Services</h5>
+      <a href="#services">AC Repair</a>
+      <a href="#services">Plumbing</a>
+      <a href="#services">Electrical</a>
+      <a href="#services">Cleaning</a>
+    </div>
+    <div>
+      <h5>Company</h5>
+      <a href="#">About Us</a>
+      <a href="#">Careers</a>
+    </div>
+    <div>
+      <h5>Support &amp; Legal</h5>
+      <a href="#support">Support Center</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2026 FixFlow. All rights reserved.</div>
+</footer>
+
+<!-- SIGN IN MODAL -->
+<div class="modal-overlay" id="signInModal">
+  <div class="modal-box">
+    <button class="modal-close" id="closeSignIn">×</button>
+    <h3>Sign In</h3>
+    <input type="text" placeholder="Email address">
+    <input type="password" placeholder="Password">
+    <button class="btn btn-orange full" id="modalSignInBtn">Sign In</button>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
