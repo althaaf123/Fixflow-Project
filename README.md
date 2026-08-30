@@ -344,6 +344,7 @@ This final comparison helped maintain consistency between the coded website and 
 
 ## Project Structure
 
+```text
 FixFlow/
 │
 ├── index.html
@@ -352,18 +353,19 @@ FixFlow/
 ├── README.md
 │
 └── assets/
-    └── images/
-        ├── hero-technician.jpg
-        ├── rajesh-kumar.jpg
-        ├── amit-singh.jpg
-        ├── suresh-menon.jpg
-        ├── david-wilson.jpg
-        ├── recent-work-1.jpg
-        ├── recent-work-2.jpg
-        ├── fixflow-map.jpg
-        ├── review-priya.jpg
-        ├── review-arun.jpg
-        ├── review-sarah.jpg
+    ├── images/
+    │   ├── hero-technician.jpg
+    │   ├── rajesh-kumar.jpg
+    │   ├── amit-singh.jpg
+    │   ├── suresh-menon.jpg
+    │   ├── david-wilson.jpg
+    │   ├── recent-work-1.jpg
+    │   ├── recent-work-2.jpg
+    │   ├── fixflow-map.jpg
+    │   ├── review-priya.jpg
+    │   ├── review-arun.jpg
+    │   └── review-sarah.jpg
+    │
     └── icons/
         ├── help-center.png
         ├── chat-support.png
