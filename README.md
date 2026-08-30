@@ -139,6 +139,7 @@ FixFlow/
         ├── review-priya.jpg
         ├── review-arun.jpg
         ├── review-sarah.jpg
+    └── icons/
         ├── help-center.png
         ├── chat-support.png
         ├── email-us.png
