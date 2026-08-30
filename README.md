@@ -1,124 +1,308 @@
-# FixFlow
 
-FixFlow is a modern home-service platform concept that helps customers find trusted professionals, describe home problems, match with suitable services, book a convenient time, and track the service.
+# FixFlow — Design to Code
 
-## Project Overview
+FixFlow is an on-demand home-services marketplace that helps homeowners discover repair services, find verified professionals, book a service, and track the service journey.
 
-FixFlow is designed to provide a simple and reliable way for customers to handle home maintenance and repair services.
+This project was created by converting the selected FixFlow Figma design into a responsive front-end using HTML, CSS, and Vanilla JavaScript.
 
-The website includes:
+## Design-to-Code Process
 
-- Service discovery
-- Smart problem assistance
-- Smart professional matching
-- Professional profiles
-- Service booking
-- Booking confirmation
-- Live service tracking
-- Customer reviews
-- Support
-- Responsive desktop, tablet, and mobile layouts
+### 1. Studied the Figma Design
 
-## Features
+I first reviewed the selected FixFlow Figma design and studied:
 
-### Home / Hero
-Customers can quickly understand the FixFlow service and start finding a solution.
+- Page structure
+- Section spacing
+- Grid layouts
+- Typography
+- Colours
+- Card designs
+- Corner radii
+- Buttons
+- Interactive elements
+- Desktop, Tablet, and Mobile layouts
 
-### Services
-The website provides multiple home services including:
+### 2. Divided the Design into 15 Sections
 
-- AC & Cooling
-- Plumbing
-- Electrical
-- Appliance Repair
-- Carpentry
-- Home Cleaning
-- Painting
-- Other Services
+I broke the complete Figma page into 15 sections and followed the same order throughout the implementation:
 
-### Smart Assistant
-Customers can describe their problem or choose from common problems such as:
+1. Hero
+2. Services
+3. Simple Process
+4. Smart Assistant
+5. Smart Match
+6. Trusted Professionals
+7. Professional Detail
+8. Book Your Service
+9. Booking Confirmed
+10. Live Tracking
+11. Why Choose FixFlow
+12. Loved By Thousands
+13. Support
+14. Ready to Get It Fixed
+15. Footer
 
-- AC not cooling
-- Water leaking
-- Power not working
-- Appliance not working
+### 3. Created the HTML Structure
 
-Customers can also upload a problem photo and provide their location.
+I created the main page structure in `index.html` using semantic HTML sections.
 
-### Smart Match
-The system displays a suitable service based on the customer's problem and allows the customer to continue to professional selection.
+Each major section was given a meaningful ID so that the sections could be connected through smooth scrolling and interactions.
 
-### Trusted Professionals
-Customers can search and view professional profiles including:
+Example:
 
-- Professional name
-- Service specialization
-- Experience
-- Distance
-- Rating
-- Profile
+```html
+<section id="hero">
+<section id="services">
+<section id="process">
+<section id="assistant">
+<section id="match">
+<section id="professionals">
+<section id="detail">
+<section id="booking">
+<section id="confirmed">
+<section id="tracking">
+<section id="why">
+<section id="testimonials">
+<section id="support">
+<section id="cta">
+<footer id="footer">
+4. Created the CSS Styling
 
-### Professional Detail
-The professional detail section provides:
+I created style.css to reproduce the visual styling of the FixFlow Figma design.
 
-- Professional photo
-- Experience
-- Jobs completed
-- Response time
-- Base price
-- Recent work
-- Select Professional option
+The CSS implementation includes:
 
-### Booking
-Customers can select:
+CSS Grid
+Flexbox
+CSS Custom Properties
+Media Queries
+Transitions
+Responsive layouts
+Card styling
+Button styling
+Typography
+Section spacing
+Responsive alignment
 
-- Date
-- Time
-- Service address
+The main colours used in the design are:
 
-The booking summary displays the service price, taxes and total amount.
+--navy: #061C3A;
+--blue: #2F6B93;
+--orange: #FFA51F;
+--ink: #0E1B2B;
+--green: #2ABE78;
+5. Recreated the Figma Layout
 
-### Booking Confirmation
-After booking, the customer receives a confirmation containing the booking ID, selected date, selected time, and assigned professional.
+I converted the main visual layouts from Figma into HTML and CSS.
 
-### Live Tracking
-Customers can view the service progress and track the professional's estimated arrival.
+The implemented sections include:
 
-### Why Choose FixFlow
-The website highlights:
+Hero
+Services
+Simple Process
+Smart Assistant
+Smart Match
+Trusted Professionals
+Professional Detail
+Book Your Service
+Booking Confirmed
+Live Tracking
+Why Choose FixFlow
+Loved By Thousands
+Support
+Ready to Get It Fixed
+Footer
 
-- Vetted professionals
-- Transparent pricing
-- 24/7 support
-- Service guarantee
+I also recreated the organic hero ring shape using the mixed border-radius values from the design.
 
-### Customer Reviews
-The website contains customer testimonials showing service experiences and feedback.
+6. Added JavaScript Interactions
 
-### Support
-The support section provides:
+I used Vanilla JavaScript in script.js to make the website interactive.
 
-- Help Center
-- Chat Support
-- Email Support
-- Emergency Help
+The implemented interactions include:
 
-### Final Call To Action
-Customers can book a service or access the app download option.
+Service card selection
+Smooth scrolling
+Smart Assistant interactions
+Issue chip selection
+Issue photo upload preview
+Input validation
+Professional search
+Rating sorting
+Professional profile switching
+Booking summary updates
+Booking confirmation
+Booking ID generation
+Live tracking animation
+CTA interactions
+Confirmation alerts
+7. Created Reusable Components
 
-## Technology Used
+I created reusable UI patterns instead of duplicating the same HTML repeatedly.
 
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Web Design
-- SVG Icons
-- Local Image Assets
+The reusable components include:
 
-## Project Structure
+Service Card
+Step Card
+Issue Chip
+Photo Upload Preview
+Professional Card
+Detail Card
+Booking Summary Card
+Confirmation Card
+Tracking Marker
 
-```text
+These reusable patterns helped keep the implementation consistent throughout the page.
+
+8. Added Service Selection
+
+The Services section allows users to select a service card.
+
+When a service is selected:
+
+The selected state is displayed
+The selected service is used for the next part of the flow
+The user can continue toward the Smart Assistant and booking process
+9. Added Smart Assistant Interaction
+
+The Smart Assistant allows users to describe the problem they are facing.
+
+I implemented:
+
+Issue chips
+Preset issue text
+Problem description input
+Image upload
+Live image preview
+Input validation
+
+The validation prevents the user from continuing when the problem description is empty and displays an inline message instead of interrupting the user with a pop-up.
+
+10. Added Professional Search and Filtering
+
+The Trusted Professionals section includes dynamic search functionality.
+
+When the user enters a professional's name in the search field, the professional cards are filtered in real time.
+
+I also added rating-based sorting so that professionals can be reordered according to their ratings.
+
+11. Added Dynamic Professional Details
+
+The Professional Detail section uses a shared data object.
+
+When a professional is selected, the following information is updated dynamically:
+
+Name
+Rating
+Experience
+Jobs Completed
+Response Time
+Base Price
+Professional Image
+
+This avoids duplicating the same HTML structure for every professional.
+
+12. Added Dynamic Booking Summary
+
+The Book Your Service section contains the booking form.
+
+The booking summary updates whenever the user changes the relevant form values, including:
+
+Service
+Date
+Time
+Price
+
+This keeps the booking information synchronized with the user's current selections.
+
+13. Added Booking Confirmation
+
+After the booking is confirmed, the Booking Confirmed section displays the completed booking state.
+
+A random Booking ID is generated using JavaScript and displayed as part of the confirmation.
+
+14. Created Live Tracking
+
+I implemented the Live Tracking section using SVG path geometry.
+
+The tracking marker moves along the actual curved SVG route instead of moving in a simple straight line.
+
+The implementation uses:
+
+getTotalLength()
+getPointAtLength()
+
+A CSS transition is also used to create a smooth movement effect between tracking points.
+
+15. Made the Website Responsive
+
+I created responsive layouts for:
+
+Desktop
+Tablet
+Mobile
+
+The responsive breakpoints are:
+
+Desktop: Above 1024px
+Tablet: 641px - 1024px
+Mobile: Below 640px
+
+Different sections use different column rules depending on the available screen width.
+
+For example:
+
+Services:        4 -> 2 -> 1
+Simple Process:  5 -> 3 -> 1
+Footer:          4 -> 2 -> 1
+
+This keeps the cards and content readable across different screen sizes.
+
+16. Tested the Responsive Layout
+
+I tested the website across:
+
+Desktop
+Tablet
+Mobile
+
+Chrome DevTools Device Toolbar was used to verify the layouts at different viewport sizes.
+
+I checked:
+
+Section layouts
+Cards
+Buttons
+Forms
+Spacing
+Typography
+Responsive columns
+Interactive behaviour
+17. Compared the Code with the Figma Design
+
+After completing the implementation, I compared each coded section with the original Figma design.
+
+I reviewed:
+
+Spacing
+Colours
+Typography
+Grid structure
+Card dimensions
+Corner radii
+Interactive states
+Responsive behaviour
+
+This final comparison helped maintain consistency between the coded website and the original Figma design.
+
+Technologies Used
+HTML5
+CSS3
+Vanilla JavaScript
+Figma
+Chrome DevTools
+VS Code
+Project Structure
 FixFlow/
 │
 ├── index.html
@@ -144,3 +328,79 @@ FixFlow/
         ├── chat-support.png
         ├── email-us.png
         └── emergency-help.png
+Main User Flow
+Home Problem
+      |
+      v
+Service Selection
+      |
+      v
+Smart Assistant
+      |
+      v
+Smart Match
+      |
+      v
+Professional Selection
+      |
+      v
+Professional Details
+      |
+      v
+Book Your Service
+      |
+      v
+Booking Confirmation
+      |
+      v
+Live Tracking
+      |
+      v
+Get It Fixed
+Challenges Faced
+
+During the implementation, the main challenges included:
+
+Recreating the organic hero ring shape
+Maintaining consistency across 15 sections
+Managing different grid layouts for Desktop, Tablet, and Mobile
+Animating the tracking marker along a curved SVG path
+Keeping the booking information synchronized without using a framework
+Creating Smart Assistant validation without disrupting the user experience
+Avoiding duplicated markup for professional cards
+Maintaining the correct visual rhythm across the complete long-form page
+Solutions Implemented
+
+To solve these challenges, I:
+
+Recreated the mixed border-radius values for the hero shape
+Used shared CSS variables for the main colours
+Created reusable card patterns
+Used section-specific responsive grid rules
+Used SVG path geometry for the tracking animation
+Used direct DOM updates for booking information
+Used inline validation messages instead of disruptive pop-ups
+Used one shared professional data object for multiple professional cards
+Tested each section against the original Figma design
+Final Result
+
+The final result is a responsive FixFlow website that reproduces the selected Figma design using HTML, CSS, and Vanilla JavaScript.
+
+The complete implementation contains 15 connected sections and supports Desktop, Tablet, and Mobile layouts.
+
+What I Learned
+
+Through this project, I worked on:
+
+Figma-to-code conversion
+Semantic HTML structure
+CSS Grid and Flexbox
+Responsive web design
+Reusable UI components
+Vanilla JavaScript DOM manipulation
+Interactive UI states
+Form handling
+Dynamic content updates
+SVG path-based animation
+Responsive testing
+Design-to-code workflow
